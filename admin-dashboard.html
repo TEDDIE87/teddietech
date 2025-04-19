@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Eddy Piano School</title>
+  <link rel="stylesheet" href="style 1.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Admin Dashboard</h2>
+    <div id="userList"></div>
+
+    <button id="logoutAdmin">Logout</button>
+  </div>
+
+  <script>
+    window.onload = function () {
+      const isAdmin = localStorage.getItem('isAdmin');
+      if (!isAdmin) {
+        alert("Access denied. Please login as admin.");
+        window.location.href = "admin.html";
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const userListDiv = document.getElementById('userList');
+
+      if (users.length === 0) {
+        userListDiv.innerHTML = "<p>No students have registered yet.</p>";
+      } else {
+        let html = "<h3>Registered Students:</h3><ul>";
+        users.forEach((user, index) => {
+          html += `<li>${index + 1}. ${user.name} - ${user.email}</li>`;
+        });
+        html += "</ul>";
+        userListDiv.innerHTML = html;
+      }
+    };
+
+    document.getElementById('logoutAdmin')?.addEventListener('click', function () {
+      localStorage.removeItem('isAdmin');
+      window.location.href = 'admin.html';
+    });
+  </script>
+</body>
+</html>

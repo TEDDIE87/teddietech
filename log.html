@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Eddy Piano School</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-container {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .home-container h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .home-container p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .home-buttons a {
+      padding: 14px 28px;
+      background: #ff7e5f;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .home-buttons a:hover {
+      background: #feb47b;
+    }
+
+    .logo {
+      font-size: 60px;
+      margin-bottom: 10px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="form-container home-container">
+    <div class="logo">🎹</div>
+    <h1>Welcome to Eddy Piano School</h1>
+    <p>Learn piano the fun way — register today and start your journey to becoming a maestro!</p>
+
+    <div class="home-buttons">
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="admin.html" style="background: #333">Admin Login</a>
+    </div>
+  </div>
+</body>
+</html>

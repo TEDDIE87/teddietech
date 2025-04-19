@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Piano colors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    width: 360px;
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #feb47b;
+  }
+  
+  a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .payment-info {
+    margin: 20px 0;
+    background: #fff9ec;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 6px solid #ffb347;
+    text-align: left;
+  }
+  

@@ -1,0 +1,272 @@
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .nav {
+            margin: 20px;
+            color: peru;
+            padding: 10px;
+            background-color: rgb(85, 97, 110);
+            
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #e0f7fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-image:url(eddy.jpg)
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .features h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            flex: 1 0 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
+        .courses {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .course {
+            flex: 1 0 200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .course h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .testimonials {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .testimonials h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial cite {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            color: #333;
+        }
+
+        .about-eddy {
+            padding: 40px 20px;
+            background-color: #e0f7fa;
+            text-align: center;
+        }
+
+        .about-eddy h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about-eddy p {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .faq {
+            padding: 40px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .faq h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
+        .cta-bottom {
+            padding: 40px 20px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-bottom h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .cta-bottom a {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cta-bottom a:hover {
+            background-color: #1e6091;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .login { 
+            position: relative;
+            text-align: center;
+        }
+        #loginform {
+            border: 10px;
+            
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 36px;
+            background: #ff7e5f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+          }

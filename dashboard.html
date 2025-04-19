@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Eddy Piano School</title>
+  <link rel="stylesheet" href="style 1.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Welcome, <span id="userName"></span>!</h2>
+    <p>This is your piano learning dashboard.</p>
+
+    <h3>Payment Information</h3>
+    <p>Please use the following details to make your payment:</p>
+    <p><strong>M-Pesa Till Number:</strong> 8825466</p>
+    <p><strong>Account Name:</strong> EDDY PIANO SCHOOL</p>
+
+    <div>
+      <a href="lessons.html" style="background: #ff914d; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">View Piano Lessons</a>
+    </div>
+
+    <button id="logoutButton">Logout</button>
+  </div>
+
+  <script>
+    window.onload = function () {
+      const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      if (!currentUser) {
+        window.location.href = 'login.html';
+        return;
+      }
+      document.getElementById('userName').innerText = currentUser.name;
+    };
+
+    document.getElementById('logoutButton')?.addEventListener('click', function () {
+      localStorage.removeItem('currentUser');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
